@@ -1,12 +1,12 @@
 import React from 'react'
-import { StyledList } from "components/CommonStyled/List.styled"
-import {StyledListItem} from "components/CommonStyled/ListItem.styled"
-import {StyledRemoveBtn} from "components/ContactList/BtnRemove.styled"
+import { StyledList } from "../CommonStyled/List.styled"
+import {StyledListItem} from "../CommonStyled/ListItem.styled"
+import {StyledRemoveBtn} from "../ContactList/BtnRemove.styled"
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { fetchContactsOperations, deleteContact } from "redux/contactsOperations"
-import { getContacts, getError, getIsLoading, getStatusFilter } from "redux/selectors";
+import { fetchContactsOperations, deleteContact } from "../../redux/contactsOperations"
+import { getContacts, getError, getIsLoading, getStatusFilter } from "../../redux/selectors";
 
 
 export const ContactList = () => {

@@ -1,13 +1,13 @@
 import { useState } from "react"
 import { nanoid } from 'nanoid'
-import {StyledForm} from "components/ContactForm/ContactForm.styled"
-import { StyledLabel } from "components/CommonStyled/Label.styled"
-import {StyledInput} from "components/CommonStyled/Input.styled"
-import { StyledBtn } from "components/CommonStyled/Btn.styled"
+import {StyledForm} from "../ContactForm/ContactForm.styled"
+import { StyledLabel } from "../CommonStyled/Label.styled"
+import {StyledInput} from "../CommonStyled/Input.styled"
+import { StyledBtn } from "../CommonStyled/Btn.styled"
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { getContacts } from "redux/selectors";
-import { addContact } from "redux/contactsOperations"
+import { getContacts } from "../../redux/selectors";
+import { addContact } from "../../redux/contactsOperations"
 
 export function ContactForm() {
  
