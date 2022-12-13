@@ -4,4 +4,6 @@ export const StyledListItem = styled.li`
   &: last-child {
     margin-bottom: 0;
   }
+  font: 'Roboto';
+  color: #553c9a;
 `;
